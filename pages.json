@@ -1,0 +1,302 @@
+[
+	{
+		"title": "Introduction",
+		"path": "introduction.md",
+		"url": "https://docs.chatfeatured.com/",
+		"description": "ChatFeatured shows how AI answer engines talk about your brand, and helps you change what they say."
+	},
+	{
+		"title": "Quickstart",
+		"path": "getting-started/quickstart.md",
+		"url": "https://docs.chatfeatured.com/getting-started/quickstart",
+		"description": "Sign up, set up your first project, start your trial, and what to do on day one."
+	},
+	{
+		"title": "Key concepts",
+		"path": "getting-started/key-concepts.md",
+		"url": "https://docs.chatfeatured.com/getting-started/key-concepts",
+		"description": "Workspaces, projects, prompts, engines and the metrics ChatFeatured reports."
+	},
+	{
+		"title": "Prompts",
+		"path": "using-chatfeatured/prompts.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/prompts",
+		"description": "Track the questions your customers ask AI engines, and see how often the answers name you"
+	},
+	{
+		"title": "Topics and keywords",
+		"path": "using-chatfeatured/topics-and-keywords.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/topics-and-keywords",
+		"description": "Group prompts by theme with topics, and track the search phrases behind them with keywords"
+	},
+	{
+		"title": "Data Analytics",
+		"path": "using-chatfeatured/analytics.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/analytics",
+		"description": "Read your Visibility, sentiment, rankings and cited sources across AI answers, filtered to the prompts, models and countries you care about."
+	},
+	{
+		"title": "Competitors",
+		"path": "using-chatfeatured/competitors.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/competitors",
+		"description": "Choose which brands you compare yourself against, and which names and websites count as each one"
+	},
+	{
+		"title": "Website analytics",
+		"path": "using-chatfeatured/website-analytics.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/website-analytics",
+		"description": "Measure website traffic and AI referrals with Google Analytics 4, Plausible Analytics, or Fathom Analytics"
+	},
+	{
+		"title": "Agent Analytics",
+		"path": "using-chatfeatured/agent-analytics.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/agent-analytics",
+		"description": "See which AI crawlers and search bots request pages on your website, and how often"
+	},
+	{
+		"title": "Brand Book",
+		"path": "using-chatfeatured/brand-book.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/brand-book",
+		"description": "Your project's identity, description and customer personas, and how ChatFeatured uses them"
+	},
+	{
+		"title": "Knowledge base",
+		"path": "using-chatfeatured/knowledge-base.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/knowledge-base",
+		"description": "Upload documents, pages and notes about your company so the agent and the article writer get your facts right"
+	},
+	{
+		"title": "Articles and the Content Calendar",
+		"path": "using-chatfeatured/articles.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/articles",
+		"description": "How articles move from idea to published, article credits, featured images, and scheduling"
+	},
+	{
+		"title": "Automations",
+		"path": "using-chatfeatured/automations.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/automations",
+		"description": "Schedule the agent to run reports and reviews on its own and deliver the results by email or in the dashboard"
+	},
+	{
+		"title": "Site audit",
+		"path": "using-chatfeatured/site-audit.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/site-audit",
+		"description": "Find the technical, content and AEO problems that keep AI answers from reaching, reading and quoting your pages"
+	},
+	{
+		"title": "Product page audit",
+		"path": "using-chatfeatured/product-page-audit.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/product-page-audit",
+		"description": "Score a single product page on how well AI answers can read, trust and recommend it"
+	},
+	{
+		"title": "Tasks",
+		"path": "using-chatfeatured/tasks.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/tasks",
+		"description": "Track the work that comes out of ChatFeatured: article reviews, site audit fixes, product page fixes and agent opportunities"
+	},
+	{
+		"title": "ChatGPT Ads",
+		"path": "using-chatfeatured/chatgpt-ads.md",
+		"url": "https://docs.chatfeatured.com/using-chatfeatured/chatgpt-ads",
+		"description": "See which advertisers showed up in ChatGPT for your prompts, and run your own OpenAI Ads campaigns from ChatFeatured"
+	},
+	{
+		"title": "Index submissions",
+		"path": "index-submissions/index-submissions.md",
+		"url": "https://docs.chatfeatured.com/index-submissions/index-submissions",
+		"description": "Submit your site to AI search engines directly, every week and whenever you publish"
+	},
+	{
+		"title": "Set up index submissions",
+		"path": "index-submissions/setup.md",
+		"url": "https://docs.chatfeatured.com/index-submissions/setup",
+		"description": "Add your website, verify ownership with a key file or a redirect, and track each submission run"
+	},
+	{
+		"title": "The ChatFeatured agent",
+		"path": "ai-agents/overview.md",
+		"url": "https://docs.chatfeatured.com/ai-agents/overview",
+		"description": "What the agent can see and do, where to open it, who can use it, and how to configure it"
+	},
+	{
+		"title": "Integrations overview",
+		"path": "integrations/overview.md",
+		"url": "https://docs.chatfeatured.com/integrations/overview",
+		"description": "Every integration ChatFeatured offers: publishing, Google and website analytics, AI agent analytics, and the REST API and MCP server"
+	},
+	{
+		"title": "WordPress",
+		"path": "integrations/wordpress.md",
+		"url": "https://docs.chatfeatured.com/integrations/wordpress",
+		"description": "Install the ChatFeatured plugin to publish articles to WordPress, track AI crawler traffic and turn on index submissions."
+	},
+	{
+		"title": "Webflow",
+		"path": "integrations/webflow.md",
+		"url": "https://docs.chatfeatured.com/integrations/webflow",
+		"description": "Publish ChatFeatured articles to a Webflow CMS collection as drafts, live items or on a schedule."
+	},
+	{
+		"title": "Framer",
+		"path": "integrations/framer-integration.md",
+		"url": "https://docs.chatfeatured.com/integrations/framer-integration",
+		"description": "Sync ChatFeatured articles into a Framer CMS collection with the ChatFeatured CMS Sync plugin."
+	},
+	{
+		"title": "Ghost integration",
+		"path": "integrations/ghost-integration.md",
+		"url": "https://docs.chatfeatured.com/integrations/ghost-integration",
+		"description": "Publish ChatFeatured articles to your Ghost site as drafts, live posts or scheduled posts"
+	},
+	{
+		"title": "HubSpot integration",
+		"path": "integrations/hubspot.md",
+		"url": "https://docs.chatfeatured.com/integrations/hubspot",
+		"description": "Publish ChatFeatured articles to a blog hosted on HubSpot"
+	},
+	{
+		"title": "Sanity integration",
+		"path": "integrations/sanity.md",
+		"url": "https://docs.chatfeatured.com/integrations/sanity",
+		"description": "Publish ChatFeatured articles into your Sanity dataset as drafts, published documents or scheduled posts"
+	},
+	{
+		"title": "Wix integration",
+		"path": "integrations/wix.md",
+		"url": "https://docs.chatfeatured.com/integrations/wix",
+		"description": "Publish ChatFeatured articles to your Wix blog as drafts, live posts or scheduled posts."
+	},
+	{
+		"title": "Shopify integration",
+		"path": "integrations/shopify.md",
+		"url": "https://docs.chatfeatured.com/integrations/shopify",
+		"description": "Publish ChatFeatured articles to your Shopify store's blog through a custom app you create"
+	},
+	{
+		"title": "Git-based CMS integration",
+		"path": "integrations/git-based-cms.md",
+		"url": "https://docs.chatfeatured.com/integrations/git-based-cms",
+		"description": "Publish ChatFeatured articles as Markdown files committed to your site's GitHub repository"
+	},
+	{
+		"title": "ChatFeatured Blog CMS",
+		"path": "integrations/blog-cms.md",
+		"url": "https://docs.chatfeatured.com/integrations/blog-cms",
+		"description": "Host a blog on your own subdomain, served by ChatFeatured, and publish articles to it without a separate CMS."
+	},
+	{
+		"title": "Google Analytics",
+		"path": "integrations/google-analytics.md",
+		"url": "https://docs.chatfeatured.com/integrations/google-analytics",
+		"description": "Connect a Google Analytics 4 property to see how much traffic AI assistants send to your site, which pages they land on, and what converts."
+	},
+	{
+		"title": "Google Search Console",
+		"path": "integrations/google-search-console.md",
+		"url": "https://docs.chatfeatured.com/integrations/google-search-console",
+		"description": "Connect Google Search Console to see Google Search clicks and queries, submit sitemaps, and check whether a URL is indexed."
+	},
+	{
+		"title": "Bing Webmaster Tools",
+		"path": "integrations/bing-webmaster-tools.md",
+		"url": "https://docs.chatfeatured.com/integrations/bing-webmaster-tools",
+		"description": "Bring Bing search performance and Bing AI citations into ChatFeatured"
+	},
+	{
+		"title": "Plausible Analytics",
+		"path": "integrations/plausible.md",
+		"url": "https://docs.chatfeatured.com/integrations/plausible",
+		"description": "Connect Plausible Cloud to see website traffic, goal conversions and AI referrals in ChatFeatured"
+	},
+	{
+		"title": "Fathom Analytics",
+		"path": "integrations/fathom.md",
+		"url": "https://docs.chatfeatured.com/integrations/fathom",
+		"description": "Connect Fathom Analytics to see website traffic, event conversions and AI referrals in ChatFeatured"
+	},
+	{
+		"title": "Cloudflare",
+		"path": "integrations/cloudflare.md",
+		"url": "https://docs.chatfeatured.com/integrations/cloudflare",
+		"description": "Send AI crawler visits to Agent Analytics with a Cloudflare Worker on your domain"
+	},
+	{
+		"title": "Vercel",
+		"path": "integrations/vercel.md",
+		"url": "https://docs.chatfeatured.com/integrations/vercel",
+		"description": "Send AI crawler visits to Agent Analytics with a Vercel log drain"
+	},
+	{
+		"title": "AWS Data Firehose (CloudFront)",
+		"path": "integrations/aws-data-firehose.md",
+		"url": "https://docs.chatfeatured.com/integrations/aws-data-firehose",
+		"description": "Send AI crawler visits on a CloudFront distribution to Agent Analytics through Amazon Data Firehose"
+	},
+	{
+		"title": "Agent Analytics with Webflow",
+		"path": "integrations/webflow-agent-analytics.md",
+		"url": "https://docs.chatfeatured.com/integrations/webflow-agent-analytics",
+		"description": "Track AI crawler visits on a Webflow site by putting your own Cloudflare zone and Worker in front of it"
+	},
+	{
+		"title": "Custom log integration",
+		"path": "integrations/custom-log-integration.md",
+		"url": "https://docs.chatfeatured.com/integrations/custom-log-integration",
+		"description": "Send request logs from any server, CDN or middleware to Agent Analytics over HTTP"
+	},
+	{
+		"title": "OpenAI Ads Manager",
+		"path": "integrations/openai-ads-manager.md",
+		"url": "https://docs.chatfeatured.com/integrations/openai-ads-manager",
+		"description": "Connect an OpenAI Ads account with an Advertiser API key to run ChatGPT ad campaigns, read performance and build creative from ChatFeatured"
+	},
+	{
+		"title": "REST API",
+		"path": "integrations/rest-api.md",
+		"url": "https://docs.chatfeatured.com/integrations/rest-api",
+		"description": "Export your prompts, AI responses and visibility history, manage articles and tracked content, and receive webhooks when articles change status"
+	},
+	{
+		"title": "AI agent (MCP)",
+		"path": "integrations/mcp.md",
+		"url": "https://docs.chatfeatured.com/integrations/mcp",
+		"description": "Connect Claude, ChatGPT, Cursor and other MCP clients to ChatFeatured to read your analytics and manage content"
+	},
+	{
+		"title": "Webhooks",
+		"path": "integrations/webhooks.md",
+		"url": "https://docs.chatfeatured.com/integrations/webhooks",
+		"description": "Send a project's events to your own URL, such as an article being published or a site audit finishing, so your code can act on them as they happen"
+	},
+	{
+		"title": "API and MCP errors",
+		"path": "integrations/api-errors.md",
+		"url": "https://docs.chatfeatured.com/integrations/api-errors",
+		"description": "What each error code from the ChatFeatured API (v2) and MCP server means, and what to do about it"
+	},
+	{
+		"title": "Billing and plans",
+		"path": "account/billing.md",
+		"url": "https://docs.chatfeatured.com/account/billing",
+		"description": "Plans, prices and limits, the free trial, model add-ons, and how to change or cancel your plan."
+	},
+	{
+		"title": "Team management",
+		"path": "account/team-management.md",
+		"url": "https://docs.chatfeatured.com/account/team-management",
+		"description": "Roles, invitations, project access, custom permissions and auto-join for your workspace."
+	},
+	{
+		"title": "Projects",
+		"path": "account/projects.md",
+		"url": "https://docs.chatfeatured.com/account/projects",
+		"description": "Add, edit and deactivate projects, and how many projects each plan includes."
+	},
+	{
+		"title": "Agency workspaces",
+		"path": "account/agency.md",
+		"url": "https://docs.chatfeatured.com/account/agency",
+		"description": "Manage client projects, send white-label AEO and performance reports, and collect leads with an embeddable audit form."
+	}
+]
