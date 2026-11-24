@@ -18,7 +18,7 @@ This repo is a markdown copy of [docs.chatfeatured.com](https://docs.chatfeature
 - [Topics and keywords](using-chatfeatured/topics-and-keywords.md): Group prompts by theme with topics, and track the search phrases behind them with keywords
 - [Data Analytics](using-chatfeatured/analytics.md): Read your Visibility, sentiment, rankings and cited sources across AI answers, filtered to the prompts, models and countries you care about
 - [Competitors](using-chatfeatured/competitors.md): Choose which brands you compare yourself against, and which names and websites count as each one
-- [Website analytics](using-chatfeatured/website-analytics.md): Measure website traffic and AI referrals with Google Analytics 4, Plausible Analytics, or Fathom Analytics
+- [Website analytics](using-chatfeatured/website-analytics.md): Measure website traffic and AI referrals with Google Analytics 4, Plausible Analytics, Fathom Analytics or Databuddy
 - [Agent Analytics](using-chatfeatured/agent-analytics.md): See which AI crawlers and search bots request pages on your website, and how often
 - [Brand Book](using-chatfeatured/brand-book.md): Your project's identity, description and customer personas, and how ChatFeatured uses them
 - [Knowledge base](using-chatfeatured/knowledge-base.md): Upload documents, pages and notes about your company so the agent and the article writer get your facts right
@@ -56,6 +56,7 @@ This repo is a markdown copy of [docs.chatfeatured.com](https://docs.chatfeature
 - [Bing Webmaster Tools](integrations/bing-webmaster-tools.md): Bring Bing search performance and Bing AI citations into ChatFeatured
 - [Plausible Analytics](integrations/plausible.md): Connect Plausible Cloud to see website traffic, goal conversions and AI referrals in ChatFeatured
 - [Fathom Analytics](integrations/fathom.md): Connect Fathom Analytics to see website traffic, event conversions and AI referrals in ChatFeatured
+- [Databuddy](integrations/databuddy.md): Connect Databuddy to see website traffic and AI referrals in ChatFeatured
 - [Cloudflare](integrations/cloudflare.md): Send AI crawler visits to Agent Analytics with a Cloudflare Worker on your domain
 - [Vercel](integrations/vercel.md): Send AI crawler visits to Agent Analytics with a Vercel log drain
 - [AWS Data Firehose (CloudFront)](integrations/aws-data-firehose.md): Send AI crawler visits on a CloudFront distribution to Agent Analytics through Amazon Data Firehose

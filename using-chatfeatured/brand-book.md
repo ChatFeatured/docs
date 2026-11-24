@@ -46,7 +46,7 @@ A persona describes a type of customer. Each has a **Name**, **Description**, **
 
 * **The agent** reads the brand book before answering questions about your project. See [The ChatFeatured agent](../ai-agents/overview.md).
 * **Article writing** uses your project name, domain, industry and short description as brand context for every article. Voice and writing rules belong in [Content Hub > Writing Guidelines](./articles.md#writing-guidelines), not in the brand book.
-* **Prompt suggestions** under **Prompt Tracker > Suggestions** are written for each persona: the searches that persona would type when looking for products like yours. More accurate personas give you more relevant suggestions. See [Prompts](./prompts.md).
+* **Prompt suggestions**, which you see on the **Suggestions** tab of the **All prompts** page, are written for each persona: the searches that persona would type when looking for products like yours. More accurate personas give you more relevant suggestions. See [Prompts](./prompts.md).
 * **Mention matching** uses your brand name and domain to find your project in AI answers. Name variations help detect it in the pages those answers cite.
 
 You can also ask the agent to update the brand book or manage personas, for example "add a persona for procurement managers at mid-size companies".

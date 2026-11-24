@@ -202,7 +202,7 @@ Everything else is reached through a pair of tools per area: `<area>_read` and `
 | `tasks` | Tasks and recommendations. |
 | `website` | Site and page audits, their issues, and llms.txt. |
 | `crawlers` | AI crawler and agent visits to your site. |
-| `web_analytics` | Google Analytics, Search Console, Bing Webmaster Tools, Plausible and Fathom. |
+| `web_analytics` | Google Analytics, Search Console, Bing Webmaster Tools, Plausible, Fathom and Databuddy. |
 | `social` | Social posts that AI answers cite. |
 | `ads` | ChatGPT ads. |
 | `reports` | AEO and performance reports for clients, with white labeling. Only listed when one of your workspaces has the agency product. |

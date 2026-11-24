@@ -4,7 +4,7 @@
 
 A prompt is a question you want AI engines to answer on a schedule, such as "What is the best CRM for a small business?". ChatFeatured asks it every day, on every engine in your plan, in each country you pick, and records which brands the answers name and which pages they cite. Everything in [Data Analytics](./analytics.md) is built from these answers.
 
-Prompts live in **Prompt Tracker**, which needs an active plan or trial. Its sidebar has **All prompts**, **Topics**, **Keywords** and **Suggestions**. Topics and Keywords have their own page: [Topics and keywords](./topics-and-keywords.md).
+Prompts live on the **All prompts** page, which you open from **Prompts** in the sidebar and which needs an active plan or trial. The page has four tabs: **Prompts**, **Suggestions**, **Topics** and **Keywords**. Topics and Keywords have their own page: [Topics and keywords](./topics-and-keywords.md).
 
 ## Engines and prompt slots
 
@@ -32,9 +32,9 @@ Click **Add prompts** at the top of All prompts and pick one of three options.
 
 1. Choose **Add prompts > Write your own**.
 2. Type the question in **Prompt**, the way a customer would ask an AI assistant.
-3. Optionally pick **Keywords**. Leave it empty and ChatFeatured researches keywords for you.
-4. Pick one or more **Countries**. The dialog shows how many slots the prompt will use.
-5. Optionally pick **Topics**, or use **Create topic**.
+3. Check the **Topic**. Every prompt you write needs one. As you type, ChatFeatured picks the closest of your topics; pick another, or use **Create topic** if none fits.
+4. Optionally pick **Keywords**. Leave it empty and ChatFeatured researches keywords for you.
+5. Pick one or more **Countries**. The dialog shows how many slots the prompt will use.
 6. Click **Track prompt**.
 
 ### Import CSV
@@ -82,9 +82,9 @@ If you connect [Google Search Console](../integrations/google-search-console.md)
 
 ## The prompts list
 
-![The All prompts list, with Visibility, Cited, Demand and Visibility Trend columns for each tracked prompt](https://mintcdn.com/chatfeatured/6uBafkjCiCK9CA0J/images/prompts/prompts-list.webp?fit=max\&auto=format\&n=6uBafkjCiCK9CA0J\&q=85\&s=a890ba92e8b96e55a702baf064931a17)
+![The prompts list, with Visibility, Cited, Demand and Visibility Trend columns for each tracked prompt](https://mintcdn.com/chatfeatured/6uBafkjCiCK9CA0J/images/prompts/prompts-list.webp?fit=max\&auto=format\&n=6uBafkjCiCK9CA0J\&q=85\&s=a890ba92e8b96e55a702baf064931a17)
 
-All prompts shows one row per prompt:
+The **Prompts** tab shows one row per prompt:
 
 * **Visibility:** the share of the prompt's answers that name your brand, out of answers that name any brand. The same Visibility as in Data Analytics.
 * **Cited:** the share of answers that cite a page on your own website, out of answers that mention any brand. See [Citation rate](../getting-started/key-concepts.md#citation-rate).
@@ -115,11 +115,13 @@ Tick several rows to edit topics or countries, pause, resume, delete, or write a
 
 ## Suggestions
 
-**Prompt Tracker > Suggestions** lists prompts ChatFeatured thinks are worth tracking, each with its search demand and its topic. They come from setting up your project and from prompts you kept as Proposed in [Generate prompts](#generate-prompts).
+The **Suggestions** tab lists prompts ChatFeatured thinks are worth tracking, each with its search demand and its topic. They come from setting up your project and from prompts you kept as Proposed in [Generate prompts](#generate-prompts).
 
 * **Track** starts tracking a suggestion. It then uses slots like any other prompt.
-* **Dismiss** removes it. Dismissed suggestions aren't offered again.
-* **Generate prompts** opens [Generate prompts](#generate-prompts) to write more.
+* **Dismiss**, in the row's **...** menu, removes it. Dismissed suggestions aren't offered again. The message that confirms it has an **Undo** button.
+* Tick several suggestions to track or dismiss them in one go.
+* Click a suggestion to see why it was suggested.
+* **Add prompts > Generate prompts** writes more. See [Generate prompts](#generate-prompts).
 
 ## Permissions
 
@@ -131,13 +133,17 @@ Owners, Admins and Members can add, edit, pause and delete prompts. Viewers can 
 >
 > The file needs more slots than you have left. The first rows are tracked and the rest are added as paused. Pause or delete prompts you no longer need, remove countries, or click **Increase limit**.
 
+> [accordion] "Pick a topic for this prompt."
+>
+> Every prompt you write needs a topic. Pick one in **Topic**, or use **Create topic** in that list to add a new one. CSV imports don't need one.
+
 > [accordion] "None of the selected countries are supported by your plan's models"
 >
 > No engine on your plan runs in the countries you picked. Add another country, such as your main market.
 
-> [accordion] A new prompt shows "Running…" or "No runs yet"
+> [accordion] A prompt shows "Running now", "First results tomorrow" or "Not run in this period"
 >
-> "Running…" means the prompt's first run is underway. Its figures fill in on their own as each engine replies, with no need to reload. "No runs yet" means it hasn't been sent to the engines yet, and it will be with the next daily run.
+> "Running now" means the prompt's first run is underway. Its figures fill in on their own as each engine replies, with no need to reload. "First results tomorrow" means it hasn't been sent to the engines yet, and it will be with the next daily run. "Not run in this period" means the prompt has no answers in the **Period** you picked. Pick a longer period to see its earlier answers.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

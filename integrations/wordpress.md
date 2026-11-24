@@ -75,25 +75,60 @@ Once published, the publish button becomes **Manage In WordPress**. To change th
 
 ## Sites behind Cloudflare
 
-Cloudflare's bot protection can treat ChatFeatured's requests to your site as bots and answer them with its "Just a moment..." challenge, so they never reach WordPress. Connecting, publishing and Agent Analytics all stop working, and ChatFeatured shows "Cloudflare's bot protection is blocking ChatFeatured". One custom rule fixes it. Whoever manages your Cloudflare account can add it:
+Cloudflare's bot protection can treat ChatFeatured's requests to your site as bots and answer them with its "Just a moment..." challenge, so they never reach WordPress. Connecting, publishing and Agent Analytics all stop working, and ChatFeatured shows "Cloudflare's bot protection is blocking ChatFeatured".
+
+ChatFeatured talks to the plugin from two IP addresses, `8.229.138.147` and `136.69.228.213`. Allowing both fixes the problem, and whoever manages your Cloudflare account can add the rules:
 
 **1. Open your domain in Cloudflare**
 
 Log in to Cloudflare and open the domain your WordPress site runs on.
 
-**2. Create a custom rule**
+**2. Create an IP access rule**
+
+Go to **Security → Security rules** and click **Create rule → IP access rules**. On older dashboards, go to **Security → WAF → Tools** and find **IP Access Rules**.
+
+The new dashboard only offers IP access rules once the site already has one. If you don't see the option, create the rules with the API call below instead.
+
+**3. Allow ChatFeatured's addresses**
+
+Enter `8.229.138.147`, set **Action** to **Allow** and add the note `ChatFeatured`. Under **Zone**, pick this website, or all websites in the account if you run several sites from it. Click **Create**, then add a second rule the same way for `136.69.228.213`.
+
+To create the rules with the API, run this once per address. Replace `ZONE_ID` with your domain's zone ID, which is on the domain's **Overview** page, and use a token with the zone permission **Firewall Services: Edit**. To cover every site in the account, swap `zones/ZONE_ID` for `accounts/ACCOUNT_ID` and use a token with the account permission **Account Firewall Access Rules: Edit** instead:
+
+```bash
+curl https://api.cloudflare.com/client/v4/zones/ZONE_ID/firewall/access_rules/rules \
+  -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"mode": "whitelist", "configuration": {"target": "ip", "value": "8.229.138.147"}, "notes": "ChatFeatured"}'
+```
+
+To check it, click **Send queued logs now** on the WordPress integration page in ChatFeatured. The "Last error" on the site's row clears the next time you publish to that site.
+
+You can leave Bot Fight Mode on. Cloudflare doesn't run it on a request that an IP access rule has already matched. The rules only cover traffic from ChatFeatured's servers, so visitors and other bots get the same protection as before, and the plugin still checks your API token on every request.
+
+> [!WARNING]
+>
+> An earlier version of this page suggested a custom rule that matched `rest_route=/chatfeatured/v1/` in the URL and nothing else. Anyone can add that text to any URL on your site, including the login page, and skip your protections. If you added that rule, delete it and use the IP access rules above, or replace it with the custom rule below.
+
+### Exempting only the plugin's endpoints
+
+IP access rules let ChatFeatured's servers past Cloudflare's WAF, rate limiting and bot checks on every page of your site. To exempt only the plugin's endpoints, use a custom rule instead. A custom rule can skip Super Bot Fight Mode on paid plans, but no custom rule can skip the Free plan's Bot Fight Mode, so this option only works with Bot Fight Mode off.
+
+**1. Create a custom rule**
 
 Go to **Security → Security rules** (on older dashboards, **Security → WAF → Custom rules**) and click **Create rule → Custom rule**. Name it `Allow ChatFeatured plugin`.
 
-**3. Match only the plugin's requests**
+**2. Match ChatFeatured's requests to the plugin**
 
 Click **Edit expression** and paste:
 
 ```txt
-(http.request.uri.query contains "rest_route=/chatfeatured/v1/")
+(ip.src in {8.229.138.147 136.69.228.213} and http.request.uri.path eq "/" and starts_with(http.request.uri.query, "rest_route=/chatfeatured/v1/"))
 ```
 
-**4. Skip the bot checks**
+If WordPress runs in a subfolder, put that folder's path in place of `"/"`, with a slash at each end (for example `"/blog/"`). Keep all three conditions. Without them, someone can point a request at another page, such as your login page, and have it skip your protections.
+
+**3. Skip the bot checks**
 
 Set **Action** to **Skip**, then tick:
 
@@ -105,17 +140,9 @@ Set **Action** to **Skip**, then tick:
 
 Turn on **Log matching requests** so you can confirm the rule is working later.
 
-**5. Save it at the top**
+**4. Save it at the top**
 
 Click **Deploy**, then drag the rule to the top of the list so it runs before your other custom rules.
-
-To check it, click **Send queued logs now** on the WordPress integration page in ChatFeatured. The "Last error" on the site's row clears the next time you publish to that site.
-
-> [!WARNING]
->
-> On Cloudflare's Free plan, **Bot Fight Mode** (under **Security → Bots**) can't be skipped by any rule. If it's on, turn it off. Super Bot Fight Mode on paid plans is covered by the rule above.
-
-The rule only exempts the ChatFeatured plugin's endpoints. The rest of your site keeps its protection, and the plugin still checks your API token on every request.
 
 ## Troubleshooting
 
@@ -145,19 +172,19 @@ The latest error also shows as "Last error" on the site's row.
 
 > [accordion] Cloudflare's bot protection is blocking ChatFeatured before it reaches WordPress
 >
-> Cloudflare is answering ChatFeatured's requests with a bot challenge. Add the custom rule under [Sites behind Cloudflare](#sites-behind-cloudflare).
+> Cloudflare is answering ChatFeatured's requests with a bot challenge. Add the IP access rules under [Sites behind Cloudflare](#sites-behind-cloudflare).
 
 > [accordion] SiteGround's Anti-Bot AI is challenging this request
 >
-> You can't turn this off from your SiteGround account. Ask SiteGround support to whitelist the ChatFeatured outbound IPs for your hosting account, including write (POST) requests.
+> You can't turn this off from your SiteGround account. Ask SiteGround support to whitelist ChatFeatured's IP addresses, `8.229.138.147` and `136.69.228.213`, for your hosting account, including write (POST) requests.
 
 > [accordion] Your host's bot verification (LiteSpeed reCAPTCHA) is challenging ChatFeatured
 >
-> Hosts running LiteSpeed, CyberPanel or Imunify360 can answer requests with a "Bot Verification" page before WordPress sees them. Updating the plugin won't help. Ask your host to exempt `/?rest_route=/chatfeatured/v1/` from bot verification, or to allowlist the `ChatFeatured/1.0` user agent.
+> Hosts running LiteSpeed, CyberPanel or Imunify360 can answer requests with a "Bot Verification" page before WordPress sees them. Updating the plugin won't help. Ask your host to exempt ChatFeatured's IP addresses, `8.229.138.147` and `136.69.228.213`, from bot verification.
 
 > [accordion] Something in front of WordPress answered with a web page
 >
-> A firewall, security plugin or your host's bot protection answered instead of the ChatFeatured plugin. Ask your host to let requests to `/?rest_route=/chatfeatured/v1/` through.
+> A firewall, security plugin or your host's bot protection answered instead of the ChatFeatured plugin. Ask your host to let requests from ChatFeatured's IP addresses, `8.229.138.147` and `136.69.228.213`, through.
 
 ## Related
 

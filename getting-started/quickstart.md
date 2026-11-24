@@ -17,7 +17,7 @@ Sign up with your work email. Personal addresses are refused with "Please use yo
 ## Choose how to start
 
 * **I'm a Brand** opens the setup wizard below.
-* **I'm an Agency** opens a booking page to talk to our team. See [Agency workspaces](../account/agency.md).
+* **I'm an Agency** shows a calendar where you book a call with our team to set up your agency account. See [Agency workspaces](../account/agency.md).
 
 ## The setup wizard
 
@@ -60,7 +60,9 @@ Optional. Connect [Google Search Console](../integrations/google-search-console.
 
 Pick Starter or Growth and click **Activate trial** to open checkout. A card is required, and you aren't charged until the 7-day trial ends. During the trial you can generate up to 5 AI articles; every other limit applies in full. See [The free trial](../account/billing.md#the-free-trial).
 
-Once the trial is active, set up your prompts on the Getting Started page. If you'd rather have a guided start, **Book a Call** books an onboarding call instead.
+Not sure yet? Click **Get a walkthrough** under the plans to book a 30-minute call where we take you through your workspace first. No card is needed for the call, and you can still activate a trial afterwards.
+
+Once the trial is active, set up your prompts on the Getting Started page.
 
 ## Your first day
 

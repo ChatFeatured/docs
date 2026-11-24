@@ -45,7 +45,7 @@
 		"title": "Website analytics",
 		"path": "using-chatfeatured/website-analytics.md",
 		"url": "https://docs.chatfeatured.com/using-chatfeatured/website-analytics",
-		"description": "Measure website traffic and AI referrals with Google Analytics 4, Plausible Analytics, or Fathom Analytics"
+		"description": "Measure website traffic and AI referrals with Google Analytics 4, Plausible Analytics, Fathom Analytics or Databuddy"
 	},
 	{
 		"title": "Agent Analytics",
@@ -214,6 +214,12 @@
 		"path": "integrations/fathom.md",
 		"url": "https://docs.chatfeatured.com/integrations/fathom",
 		"description": "Connect Fathom Analytics to see website traffic, event conversions and AI referrals in ChatFeatured"
+	},
+	{
+		"title": "Databuddy",
+		"path": "integrations/databuddy.md",
+		"url": "https://docs.chatfeatured.com/integrations/databuddy",
+		"description": "Connect Databuddy to see website traffic and AI referrals in ChatFeatured"
 	},
 	{
 		"title": "Cloudflare",

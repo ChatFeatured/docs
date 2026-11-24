@@ -76,6 +76,10 @@ Measure site traffic, conversions and AI referrals. If more than one provider is
 >
 > Connect traffic, event conversions and AI referral reports.
 
+> [card] [Databuddy](./databuddy.md)
+>
+> Connect traffic and AI referral reports.
+
 ## Agent analytics
 
 Log AI agent and crawler visits from your hosting or CDN. Most AI crawlers don't run JavaScript, so these server-side sources see visits that website analytics miss. See [Agent analytics](../using-chatfeatured/agent-analytics.md) for what you get.
