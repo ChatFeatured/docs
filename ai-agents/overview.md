@@ -36,7 +36,7 @@ It covers the same 7 AI engines as the rest of ChatFeatured. It can also read yo
 * Type `/` for **New chat** and **Clear chat**.
 * For anything longer than 15,000 characters, upload it to the [Knowledge Base](../using-chatfeatured/knowledge-base.md) and `@` it instead.
 
-When a trend or ranking matters, the agent draws a chart in its reply. **History** at the top of the full page lists your recent conversations. Members see only their own conversations; Owners and Admins see every conversation in the project.
+When a trend or ranking matters, the agent draws a chart in its reply. Ask it for a report, such as "a PDF report of our social citations this month for the client", and it writes one with headline numbers, tables, charts and next steps. Click **Download PDF** on the report and save it from your browser's print dialog. **History** at the top of the full page lists your recent conversations. Members see only their own conversations; Owners and Admins see every conversation in the project.
 
 ![The agent's answer to a question about this week's performance, summarizing Visibility, sentiment, citations and competitive rank](https://mintcdn.com/chatfeatured/6uBafkjCiCK9CA0J/images/agent/chat.webp?fit=max\&auto=format\&n=6uBafkjCiCK9CA0J\&q=85\&s=7f2b99d33a61166645728e4d4ecfbe8a)
 

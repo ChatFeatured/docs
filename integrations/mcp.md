@@ -193,6 +193,7 @@ Everything else is reached through a pair of tools per area: `<area>_read` and `
 | `prompts` | Prompts, suggested prompts, topics, and the keywords linked to prompts. |
 | `competitors` | Competitors, suggested competitors, and the names that count as each brand. |
 | `visibility` | The brief, analytics, AI answers, cited sources and tracked content. |
+| `progress_log` | Your Progress Log: the wins found in your data, and this week's count by category (read only). |
 | `articles` | Articles, ideas, versions and comments. |
 | `publishing` | Where each article is published or scheduled. |
 | `integrations` | CMS integrations, authors, and the ChatFeatured CMS with its form submissions. |
