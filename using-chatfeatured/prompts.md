@@ -54,6 +54,8 @@ How do I choose a project management tool?,GB,"project management software",Proj
 
 The dialog lists the parsed rows so you can remove any before you click **Import N prompts**. If the file needs more slots than you have left, rows are tracked in file order until the slots run out and the rest are added as paused.
 
+A row for a prompt you already have, even with different capitals or spacing, doesn't create a second copy. Its countries, topics and keywords are added to the prompt you have, and each new country uses a slot if that prompt is tracked. The same goes for **Write your own** and for tracking a suggestion.
+
 ### Generate prompts
 
 Choose **Add prompts > Generate prompts** to have ChatFeatured write prompts for you, then pick where to start:

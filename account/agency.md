@@ -70,11 +70,12 @@ On a finished report you can edit the **AI Summary**, use **Customize** to choos
 
 1. Go to **Agency** > **Leads** and click **Set up audit form**.
 2. Turn on **Accept submissions**.
-3. Under **Notify**, choose the workspace members to email about each new lead. At least one is required.
-4. Optionally change the **Heading**, **Description**, **Button label** and **Button color**. Your logo and name come from [Agency branding](#agency-branding).
-5. Save, then click **Copy code** and paste the embed code into your website. **Preview** shows the form.
+3. Set **Report country** to the market your prospects are in. Each lead's report checks the AI answers people in that country get. It's the United States until you change it. If your prospects are spread across markets, turn on **Ask prospects where they are**. The form then asks for their country, state or region, and city, and runs each report there. The country starts on your report country. The form gets taller, so copy the embed code again after you save.
+4. Under **Notify**, choose the workspace members to email about each new lead. At least one is required.
+5. Optionally change the **Heading**, **Description**, **Button label** and **Button color**. Your logo and name come from [Agency branding](#agency-branding).
+6. Save, then click **Copy code** and paste the embed code into your website. **Preview** shows the form.
 
-Each lead shows the business, email, when it was requested and its report's status. **Open report** takes you to the AEO report. The form runs up to 100 reports a month. Past that, leads are still saved and your team is still emailed, but no report runs for them.
+Each lead shows the business, where its report ran, the email, when it was requested and the report's status. **Open report** takes you to the AEO report. The form runs up to 100 reports a month. Past that, leads are still saved and your team is still emailed, but no report runs for them.
 
 ## Agency branding
 
