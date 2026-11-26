@@ -12,7 +12,7 @@ The ChatFeatured WordPress plugin connects a WordPress site to your project. Onc
 
 * WordPress 6.0 or later and PHP 7.4 or later
 * An administrator account on the site
-* Plugin 2.5.0 (the current version) for the editable slug, the SEO plugin fields, a changed slug or author reaching a post that's already published, and an article's live link updating the moment WordPress publishes it, including posts you publish yourself in WordPress. When a site runs an older one, its row in ChatFeatured says so.
+* Plugin 2.6.0 or later (2.7.0 is the current version) for choosing the content type articles are published as, the editable slug, the SEO plugin fields, a changed slug or author reaching a post that's already published, and an article's live link updating the moment WordPress publishes it, including posts you publish yourself in WordPress. When a site runs an older one, its row in ChatFeatured says so.
 
 ## Connect a site
 
@@ -38,6 +38,14 @@ Back on **Integrations → WordPress**, fill in **WordPress Site URL** and **API
 
 The site appears under **Connected Sites** with publishing and Agent Analytics switched on. Expand its row to switch either off or update the token. You can find the token again later under **ChatFeatured → Settings → API Key** in WordPress.
 
+### Choose where articles go
+
+Some themes keep the blog on a content type of their own (a "Blog Posts" or "Articles" menu in WordPress admin, separate from **Posts**). On such a site an article published as a standard post can show a blank page and never appear on the blog.
+
+If your site has content types beyond posts and pages, ChatFeatured asks **Where should articles go?** right after you connect. Each option shows how many entries it has published and where the site lists them. Pick the one your blog page lists.
+
+To change it later, expand the site's row and use **Publish articles as**. New articles use the new type. An article already on the site moves to it the next time you publish it, and its address changes, so set up a redirect in WordPress if the old address had traffic.
+
 Click **Add Site** to connect more sites; each has its own token. On a multisite network, copy the URL and token from the same subsite.
 
 ## Publish an article
@@ -51,7 +59,7 @@ Open the article and click the publish button (**Publish to** and the site name 
 * **Author**: pick one if your theme shows bylines. **Default author** leaves it unset.
 * **Featured Image**: upload one to replace the article's own.
 
-The plugin creates posts only, not pages or custom post types. On sites running Yoast SEO, Rank Math or All in One SEO, the meta description, SEO title and focus keyphrase go into the SEO plugin's fields. The SEO title needs plugin 2.3.2 or later, and keeps the separator and site name from your SEO plugin's title template. The site's row in ChatFeatured also has a **Use ChatFeatured article schema** switch: on, the article's JSON-LD schema replaces the SEO plugin's Article schema.
+Articles are created as the content type set under **Publish articles as**, standard posts unless you changed it. **Categories** and **Tags** only show for a content type that uses them. On sites running Yoast SEO, Rank Math or All in One SEO, the meta description, SEO title and focus keyphrase go into the SEO plugin's fields. The SEO title needs plugin 2.3.2 or later, and keeps the separator and site name from your SEO plugin's title template. The site's row in ChatFeatured also has a **Use ChatFeatured article schema** switch: on, the article's JSON-LD schema replaces the SEO plugin's Article schema.
 
 | Action | In WordPress | Article in ChatFeatured |
 | - | - | - |
@@ -181,6 +189,14 @@ The latest error also shows as "Last error" on the site's row.
 > [accordion] Your host's bot verification (LiteSpeed reCAPTCHA) is challenging ChatFeatured
 >
 > Hosts running LiteSpeed, CyberPanel or Imunify360 can answer requests with a "Bot Verification" page before WordPress sees them. Updating the plugin won't help. Ask your host to exempt ChatFeatured's IP addresses, `8.229.138.147` and `136.69.228.213`, from bot verification.
+
+> [accordion] A published article shows a blank page, or isn't on the blog
+>
+> The theme keeps its blog on its own content type and has no template for standard posts. Expand the site's row, set **Publish articles as** to the type your blog page lists, then publish the article again to move it. See [Choose where articles go](#choose-where-articles-go).
+
+> [accordion] This site has no content type ... to publish to
+>
+> The content type chosen under **Publish articles as** no longer exists on the site, usually after a theme or plugin change. Expand the site's row and pick another.
 
 > [accordion] Something in front of WordPress answered with a web page
 >

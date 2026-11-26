@@ -65,6 +65,8 @@ The AI Crawlers Allowed check sorts crawlers into two groups, because blocking e
 
 When an llms.txt check fails, click **Generate LLMs.txt fix**. ChatFeatured drafts an `llms.txt` for your site. Copy or download it, publish it at the root of your website, then click **Re-run checks**.
 
+A [blog hosted on ChatFeatured](../integrations/blog-cms.md) serves its own `llms.txt`, built from its published articles and authors, so there's nothing to publish there.
+
 ## Explore your site
 
 Site Audit opens on the Explore view. The site tree on the left narrows everything to a folder, and the header shows the scores and issue counts for that scope.

@@ -19,7 +19,7 @@ The settings are split into tabs. Click **Save Changes** in the page header afte
 * **General**: blog title, description, logo, favicon and footer text.
 * **Theme & Layout**: visual style, hub layout, article layout, colors and font.
 * **Navigation**: a button linking to your main website, header links, and social profiles shown in the footer.
-* **Authors**: the author profiles you can assign to articles.
+* **Authors**: the author profiles you can assign to articles, and the meta description and introduction of your blog's `/authors` page.
 * **Lead Capture**: an optional form that collects leads from blog visitors, plus the list of submissions.
 * **Domain**: connect your subdomain (next step).
 * **Verification**: upload ownership files for Bing Webmaster Tools, Google Search Console and similar services (see [Verification files](#verification-files)).
